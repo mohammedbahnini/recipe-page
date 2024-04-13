@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .heading-lg{
+        @apply font-young-serif text-[36px] md:text-[40px] leading-none font-normal;
+    }
+    .heading-md{
+        @apply font-young-serif text-[28px] leading-none font-normal;
+    }
+    .heading-sm{
+        @apply font-outfit text-xl leading-none font-semibold;
+    }
+    .body{
+        @apply font-outfit text-base leading-[1.5em] font-normal;
+    }
+    .body-bold{
+        @apply font-outfit text-base leading-[1.5em] font-bold;
+    }
+
+}
+@layer components{
+    .container{
+        @apply  md:max-w-[736px] mx-auto px-8 md:px-10;
+    }
+}
